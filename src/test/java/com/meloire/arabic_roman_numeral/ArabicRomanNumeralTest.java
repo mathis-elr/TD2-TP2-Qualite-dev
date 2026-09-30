@@ -19,4 +19,9 @@ public class ArabicRomanNumeralTest {
     void quatre_donne_IV() {
         assertThat(ArabicRomanNumeral.convert(4)).isEqualTo("IV");
     }
+
+    @Test
+    void six_donne_VI() {
+        assertThat(ArabicRomanNumeral.convert(6)).isEqualTo("VI");
+    }
 }
