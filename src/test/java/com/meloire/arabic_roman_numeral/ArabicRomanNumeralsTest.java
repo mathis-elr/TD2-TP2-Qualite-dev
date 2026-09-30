@@ -34,4 +34,9 @@ public class ArabicRomanNumeralsTest {
     void quarante_donne_XL() {
         assertThat(ArabicRomanNumerals.convert(40)).isEqualTo("XL");
     }
+
+    @Test
+    void quarante_quatre_donne_XLIV() {
+        assertThat(ArabicRomanNumerals.convert(44)).isEqualTo("XLIV");
+    }
 }
