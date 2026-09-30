@@ -54,4 +54,11 @@ public class ArabicRomanNumeralsTest {
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Le nombre doit être compris entre 1 et 50");
     }
+
+    @Test
+    void superieur_a_cinquante_leve_une_exception() {
+        assertThatThrownBy(() -> ArabicRomanNumerals.convert(51))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Le nombre doit être compris entre 1 et 50");
+    }
 }
