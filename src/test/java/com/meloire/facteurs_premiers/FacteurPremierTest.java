@@ -11,4 +11,9 @@ public class FacteurPremierTest {
     void test1_donne_liste_vide() {
         assertThat(facteurPremier.generate(1)).isEmpty();
     }
+
+    @Test
+    void test2_donne_deux() {
+        assertThat(facteurPremier.generate(2)).containsExactly(2);
+    }
 }
