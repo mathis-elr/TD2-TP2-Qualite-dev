@@ -3,8 +3,13 @@ package com.meloire.arabic_roman_numeral;
 public class ArabicRomanNumeral {
     public static String convert(int nbr) {
         StringBuilder resultat = new StringBuilder();
+        if (nbr >= 5) {
+            resultat.append("V");
+            nbr -= 5;
+        }
         if (nbr == 4) {
-            return "IV";
+            resultat.append("IV");
+            nbr -= 4;
         }
         while (nbr >= 1) {
             resultat.append("I");
