@@ -1,7 +1,10 @@
 package com.meloire.facteurs_premiers;
 
-public class FacteurPremier {
-    public void generate(){
+import java.util.ArrayList;
 
+public class FacteurPremier {
+
+    public ArrayList<Integer> generate(int nbre){
+        return null;
     }
 }
