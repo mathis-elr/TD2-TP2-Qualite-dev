@@ -5,6 +5,11 @@ public class ArabicRomanNumerals {
     private static final String[] SYMBOLES = {"L", "XL", "X", "IX", "V", "IV", "I"};
 
     public static String convert(int nbr) {
+
+        if (nbr <= 0) {
+            throw new IllegalArgumentException("Le nombre doit être compris entre 1 et 50");
+        }
+
         StringBuilder resultat = new StringBuilder();
 
         for (int i = 0; i < VALEURS.length; i++) {
