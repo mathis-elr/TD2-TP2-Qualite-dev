@@ -2,6 +2,7 @@ package com.meloire.arabic_roman_numeral;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class ArabicRomanNumeralsTest {
 
@@ -38,5 +39,19 @@ public class ArabicRomanNumeralsTest {
     @Test
     void quarante_quatre_donne_XLIV() {
         assertThat(ArabicRomanNumerals.convert(44)).isEqualTo("XLIV");
+    }
+
+    @Test
+    void zero_leve_une_exception() {
+        assertThatThrownBy(() -> ArabicRomanNumerals.convert(0))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Le nombre doit être compris entre 1 et 50");
+    }
+
+    @Test
+    void negatif_leve_une_exception() {
+        assertThatThrownBy(() -> ArabicRomanNumerals.convert(-5))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Le nombre doit être compris entre 1 et 50");
     }
 }
