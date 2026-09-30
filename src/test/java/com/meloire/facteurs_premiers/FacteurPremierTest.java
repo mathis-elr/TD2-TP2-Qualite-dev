@@ -39,6 +39,6 @@ public class FacteurPremierTest {
 
     @Test
     void test9_donne_trois_et_trois() {
-        assertThat(facteurPremier.generate(8)).containsExactly(3, 3);
+        assertThat(facteurPremier.generate(9)).containsExactly(3, 3);
     }
 }
