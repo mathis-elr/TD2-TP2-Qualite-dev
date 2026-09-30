@@ -38,4 +38,14 @@ public class PersonnageTest {
         Personnage personnage = new Personnage();
         assertThat(personnage.tourner(4)).isEqualTo(Orientation.NORD);
     }
+
+    @Test
+    void rotations_successives_cumulent_l_orientation() {
+        Personnage personnage = new Personnage();
+        personnage.tourner(1); // Doit être à EST
+        Orientation resultat = personnage.tourner(2); // EST + 2 = OUEST
+
+        assertThat(resultat).isEqualTo(Orientation.OUEST);
+        assertThat(personnage.getOrientation()).isEqualTo(Orientation.OUEST);
+    }
 }
