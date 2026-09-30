@@ -9,4 +9,9 @@ public class ArabicRomanNumeralTest {
     void un_donne_I() {
         assertThat(ArabicRomanNumeral.convert(1)).isEqualTo("I");
     }
+
+    @Test
+    void deux_donne_II() {
+        assertThat(ArabicRomanNumeral.convert(2)).isEqualTo("II");
+    }
 }
