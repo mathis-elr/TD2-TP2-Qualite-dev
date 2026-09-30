@@ -9,11 +9,9 @@ public class Personnage {
     }
 
     public Orientation tourner(int fois) {
-        if (fois == 2) {
-            this.orientation = Orientation.SUD;
-        } else {
-            this.orientation = Orientation.EST;
-        }
+        Orientation[] orientations = Orientation.values();
+        int nouvelIndex = this.orientation.ordinal() + fois;
+        this.orientation = orientations[nouvelIndex];
         return this.orientation;
     }
 }
