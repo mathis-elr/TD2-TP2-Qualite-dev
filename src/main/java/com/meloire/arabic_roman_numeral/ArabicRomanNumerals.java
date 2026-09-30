@@ -6,7 +6,7 @@ public class ArabicRomanNumerals {
 
     public static String convert(int nbr) {
 
-        if (nbr <= 0) {
+        if (nbr < 1 || nbr > 50) {
             throw new IllegalArgumentException("Le nombre doit être compris entre 1 et 50");
         }
 
