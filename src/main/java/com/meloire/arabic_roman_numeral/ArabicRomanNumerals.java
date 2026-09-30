@@ -1,6 +1,6 @@
 package com.meloire.arabic_roman_numeral;
 
-public class ArabicRomanNumeral {
+public class ArabicRomanNumerals {
     public static String convert(int nbr) {
         StringBuilder resultat = new StringBuilder();
         if (nbr >= 5) {
