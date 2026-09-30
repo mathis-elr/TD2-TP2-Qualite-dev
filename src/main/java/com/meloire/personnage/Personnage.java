@@ -9,6 +9,7 @@ public class Personnage {
     }
 
     public Orientation tourner(int fois) {
-        return null;
+        this.orientation = Orientation.EST;
+        return this.orientation;
     }
 }
