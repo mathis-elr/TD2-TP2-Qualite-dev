@@ -5,6 +5,6 @@ import java.util.ArrayList;
 public class FacteurPremier {
 
     public ArrayList<Integer> generate(int nbre){
-        return null;
+        return new ArrayList<>();
     }
 }
