@@ -21,4 +21,9 @@ public class FacteurPremierTest {
     void test3_donne_trois() {
         assertThat(facteurPremier.generate(3)).containsExactly(3);
     }
+
+    @Test
+    void test4_donne_deux_et_deux() {
+        assertThat(facteurPremier.generate(4)).containsExactly(2, 2);
+    }
 }
