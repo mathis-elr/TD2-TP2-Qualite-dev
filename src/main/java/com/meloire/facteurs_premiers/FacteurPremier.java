@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class FacteurPremier {
 
     public ArrayList<Integer> generate(int nbre){
-        return new ArrayList<>();
+        ArrayList<Integer> facteurs = new ArrayList<>();
+        if (nbre > 1) {
+            facteurs.add(2);
+        }
+        return facteurs;
     }
 }
