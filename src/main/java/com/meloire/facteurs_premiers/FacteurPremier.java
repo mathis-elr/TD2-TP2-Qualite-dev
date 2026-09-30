@@ -7,7 +7,7 @@ public class FacteurPremier {
     public ArrayList<Integer> generate(int nbre){
         ArrayList<Integer> facteurs = new ArrayList<>();
         if (nbre > 1) {
-            facteurs.add(2);
+            facteurs.add(nbre);
         }
         return facteurs;
     }
