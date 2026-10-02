@@ -2,15 +2,19 @@ package com.meloire.fizzbuzz;
 
 public class FizzBuzz {
     public static String de(int nbre) {
-        if(nbre % 3 == 0 && nbre % 5 == 0){
+        boolean divisiblePar3 = nbre % 3 == 0;
+        boolean divisiblePar5 = nbre % 5 == 0;
+
+        if(divisiblePar3 && divisiblePar5){
             return "FizzBuzz";
         }
-        else if(nbre % 3 == 0){
+        else if(divisiblePar3){
             return "Fizz";
         }
-        else if(nbre % 5 == 0){
+        else if(divisiblePar5){
             return "Buzz";
         }
-        return String.valueOf(nbre);
+
+        return Integer.toString(nbre);
     }
 }
