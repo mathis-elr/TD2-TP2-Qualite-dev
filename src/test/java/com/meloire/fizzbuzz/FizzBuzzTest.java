@@ -35,4 +35,14 @@ public class FizzBuzzTest {
     public void quinze_doit_renvoyer_FizzBuzz(){
         assertThat(fizzBuzz.de(15)).isEqualTo("FizzBuzz");
     }
+
+    @Test
+    public void negatif_doit_renvoyer_erreur(){
+        assertThat(fizzBuzz.de(15)).isEqualTo("FizzBuzz");
+    }
+
+    @Test
+    void trente_doit_renvoyer_fizzbuzz() {
+        assertThat(fizzBuzz.de(30)).isEqualTo("FizzBuzz");
+    }
 }
