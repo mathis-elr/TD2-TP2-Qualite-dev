@@ -30,4 +30,9 @@ public class FizzBuzzTest {
     public void dix_doit_renvoyer_Buzz(){
         assertThat(fizzBuzz.de(10)).isEqualTo("Buzz");
     }
+
+    @Test
+    public void quinze_doit_renvoyer_FizzBuzz(){
+        assertThat(fizzBuzz.de(15)).isEqualTo("FizzBuzz");
+    }
 }
