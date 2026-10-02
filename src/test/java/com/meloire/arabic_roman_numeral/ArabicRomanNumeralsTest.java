@@ -17,6 +17,11 @@ public class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void trois_donne_III() {
+        assertThat(ArabicRomanNumerals.convert(3)).isEqualTo("III");
+    }
+
+    @Test
     void quatre_donne_IV() {
         assertThat(ArabicRomanNumerals.convert(4)).isEqualTo("IV");
     }
